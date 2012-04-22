@@ -13,3 +13,4 @@ function make_medium_image_bw($sizes) {
 	$sizes[] = 'medium-bw';
 	return $sizes;
 }```
+
