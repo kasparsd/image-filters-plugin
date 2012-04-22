@@ -12,5 +12,5 @@ add_filter('filtered_image_sizes', 'make_medium_image_bw');
 function make_medium_image_bw($sizes) {
 	$sizes[] = 'medium-bw';
 	return $sizes;
-}```
-
+}
+```
