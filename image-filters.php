@@ -1,5 +1,4 @@
 <?php
-
 /*
  Plugin Name: Image Filters
  Plugin URI: 
@@ -9,22 +8,7 @@
  Author URI: http://konstruktors.com
  Text Domain: image-filters
  */
-
-
-/*
-How to use this plugin it:
-
-// Add a new image size which we'll make black and white
-add_image_size('medium-bw', 100, 100);
-
-// Add this size to the filtered image sizes
-add_filter('filtered_image_sizes', 'make_medium_image_bw');
-function make_medium_image_bw($sizes) {
-	$sizes[] = 'medium-bw';
-	return $sizes;
-}
-*/
-
+ 
 
 add_filter('wp_generate_attachment_metadata', 'add_bw_images_communicate', 10, 2);
 
